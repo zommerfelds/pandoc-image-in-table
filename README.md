@@ -5,10 +5,21 @@ To use this filter, simply add `--filter ../table_image.py` to your Pandoc argum
 
 ## Demo
 
-Example without the filter:
+Given the following Markdown:
 
-![`pandoc -o before.pdf demo.md`](demo/before.png)
+```
+Name            Surface area       Photo
+--------------  -----------------  -------------------
+Earth           510,072,000 km^2^  ![](earth.png)
+Mars            144,798,500 km^2^  ![](mars.png)
+```
 
-Example with the filter:
+### Example without the filter
 
-![`pandoc --filter ../table_image.py -o after.pdf demo.md`](demo/after.png)
+`pandoc -o before.pdf demo.md`
+![](demo/before.png)
+
+### Example with the filter
+
+`pandoc --filter ../table_image.py -o after.pdf demo.md`
+![](demo/after.png)
