@@ -17,9 +17,11 @@ Mars            144,798,500 km^2^  ![](mars.png)
 ### Example without the filter
 
 `pandoc -o before.pdf demo.md`
+
 ![](demo/before.png)
 
 ### Example with the filter
 
 `pandoc --filter ../table_image.py -o after.pdf demo.md`
+
 ![](demo/after.png)
