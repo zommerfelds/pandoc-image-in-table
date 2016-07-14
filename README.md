@@ -1,7 +1,7 @@
 # pandoc-image-in-table
 A very simple Pandoc filter to properly center images inside a table for LaTeX output. It works by simply adding `\raisebox{-.5\height}{IMAGE}` to images occurring in a table.
 
-To use this filter, simply add `--filter ../table_image.py` to your Pandoc arguments.
+To use this filter, simply add `--filter table_image.py` to your Pandoc arguments.
 
 ## Demo
 
